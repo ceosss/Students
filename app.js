@@ -79,10 +79,7 @@ app.get("/deleteStudent/:id/delete",function(req,res){
     })
     });
     
-    app.listen(3000, function() {
-      console.log("Server Started");
-    });
-
+    
 app.get("/deleteStudent",function(req,res){
     studentData.find({},function(err,allStud){
         if(err){
@@ -167,3 +164,12 @@ app.post("/updateStudent/:id/update",function(req,res){
     });
 });
 
+
+
+// app.listen(3000, function() {
+//     console.log("Server Started");
+//   });
+
+app.listen(process.env.PORT || 3000, function(){
+    console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+  });
