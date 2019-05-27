@@ -1,0 +1,43 @@
+<% include ./partials/header.ejs %>
+
+
+    <div class="showstudent">
+        <h2 style="text-align: center;color: #FFF200; margin-bottom: 10px;">Update Student</h2>
+
+        <!-- <ul>
+            <% for(var i=0; i<student.length ; i++) { %>
+                <li style="margin: 10px"> <%= student[i].name %> -> <%= student[i].roll %> -> <%= student[i].age%> yrs</li>
+                    <a style="background-color: white; color: grey; padding: 5px;" href="updateStudent/<%=student[i]._id%>/update">Update</a>
+            <%}%>
+        </ul>   -->
+        
+        <% for(var i=0; i<student.length ; i++) { %>
+                <div class="card" style="color: black; text-align: center; margin-top: 20px; margin-bottom: 20px">
+                    <img class="card-img-top" src="<%= student[i].image %>" alt="Card Image"
+                        style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">
+                            <%= student[i].name %>
+                        </h4>
+                        <p class="card-text">
+                            Roll : <%= student[i].roll %>
+                        </p>
+                        <p class="card-text">
+                            Age : <%= student[i].age %>
+                        </p>
+                        <a style="background-color: #778BEB" class="btn btn-primary" href="updateStudent/<%=student[i]._id%>/update">Update</a>
+                    </div>
+                </div>
+        <%}%>
+
+
+
+    </div>
+</div>
+
+</div>  
+
+</div>
+
+
+<% include ./partials/footer.ejs %>

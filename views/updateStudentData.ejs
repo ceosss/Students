@@ -1,0 +1,70 @@
+<% include ./partials/header.ejs %>
+
+    <!-- <form action="/updateStudent/<%=student._id%>/update" method="POST">
+
+    
+
+    Update Student <br>
+    Name : 
+    <input type="text" name="name" id="name" value="<%=student.name%>"><br>
+    Roll Number : 
+    <input type="number" name="roll" id="roll" value="<%=student.roll%>"><br>
+    Age : 
+    <input type="number" name="age" id="age" value="<%=student.age%>"><br>
+    <input type="submit" name="update" id="update">
+</form> -->
+
+<div class="showstudent">
+    <h2 style="text-align: center;color: #FFF200; margin-bottom: 10px;">Update Student</h2>
+
+
+
+    <form action="/updateStudent/<%=student._id%>/update" method="POST">
+        <table cellpadding="10px">
+            <tr>
+                <td>
+                    <strong> Name : </strong>
+                </td>
+                <td>
+                    <input type="text" name="name" id="name" value="<%=student.name%>">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Roll No : </strong>
+                </td>
+                <td>
+                    <input type="text" name="roll" id="roll" value="<%=student.roll%>">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <strong>Age :</strong>
+                </td>
+                <td>
+                    <input type="number" name="age" id="age" value="<%=student.age%>">
+                </td>
+            </tr>
+            <tr>
+                    <td>
+                        <strong>Image :</strong>
+                    </td>
+                    <td>
+                        <input type="text" name="image" id="image" value="<%=student.image%>">
+                    </td>
+                </tr>
+        </table>
+
+        <div style="text-align: center; margin-top: 10px;">
+            <input style="background-color: #778BEB" class="btn btn-primary" type="submit" name="submit" id="submit">
+        </div>
+
+    </form>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<% include ./partials/footer.ejs %>

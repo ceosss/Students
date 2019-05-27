@@ -1,0 +1,67 @@
+<% include ./partials/header.ejs %>
+
+
+
+<!-- <br>
+<a href="/">Show all Students</a><br>
+<a href="#">Add Student </a><br>
+<a href="updateStudent">Update Student </a><br>
+<a href="deleteStudent">Delete Student</a> -->
+
+
+
+
+<div class="showstudent">
+        <h2 style="text-align: center;color: #FFF200; margin-bottom: 10px;">Add Students</h2>
+        <form action="addStudent" method="POST">
+            <table cellpadding="10px">
+                <tr>
+                    <td>
+                            <strong> Name : </strong>
+                    </td>
+                    <td>
+                            <input type="text" name="name" id="name" placeholder="Enter Name">
+                    </td>
+                </tr>
+                <tr>
+                        <td>
+                                <strong>Roll No : </strong>
+                        </td>
+                        <td>
+                                <input type="text" name="roll" id="roll" placeholder="Enter Roll Number">
+                        </td>
+                    </tr>
+                    <tr>
+                            <td>
+                                    <strong>Age :</strong> 
+                            </td>
+                            <td>
+                                    <input type="number" name="age" id="age" placeholder="Enter Age">
+                            </td>
+                        </tr>
+                        <tr>
+                                <td>
+                                        <strong>Image :</strong>
+                                </td>
+                                <td>
+                                        <input type="text" name="image" id="image" placeholder="Enter Image Link">
+                                </td>
+                        </tr>
+                        </table>
+             
+             <div style="text-align: center; margin-top: 10px;">
+                    <input style="background-color: #778BEB" class="btn btn-primary" type="submit" name="submit" id="submit">
+             </div>
+             
+            </form>
+
+</div>
+</div>
+
+</div>  
+
+</div>
+
+
+
+<% include ./partials/footer.ejs %>
