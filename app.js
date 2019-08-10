@@ -17,8 +17,8 @@ var studSchema = new mongoose.Schema({
 var studentData = mongoose.model("studentData",studSchema);
 
 // studentData.create({
-//     name:"Aishwarya",
-//     roll : 1706481,
+//     name:"Swaraj",
+//     roll : 1706469,
 //     age : 19
 // },function(err,student){
 //     if(err){
@@ -37,14 +37,14 @@ var studentData = mongoose.model("studentData",studSchema);
 //         age  : 19
 //     },
 //     {
-//         name : "Aishwarya",
-//         roll : 1706481,
+//         name : "Swagata",
+//         roll : 1706467,
 //         age  : 19
 //     },
 //     {
-//         name : "Priya",
-//         roll : 1706470,
-//         age  : 19
+//         name : "Niket",
+//         roll : 1706426,
+//         age  : 20
 //     }
 // ];
 
