@@ -5,7 +5,7 @@ var express = require("express"),
 
 app.use(bodyParser.urlencoded({extended : true}));
 
-mongoose.connect("mongodb+srv://sswarajsamant:bs1999rs@students-s3blg.mongodb.net/sudents", { useNewUrlParser: true });
+mongoose.connect("mongodb+srv://sswarajsamant:xxxx@students-s3blg.mongodb.net/sudents", { useNewUrlParser: true });
 
 var studSchema = new mongoose.Schema({
     name: String,
